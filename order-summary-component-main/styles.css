@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+
+    /* Primary Colors */
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral Colors */
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+/* font */
+--font-family:'Red Hat Display', sans-serif;
+--weights-500:500;
+--weoghts-700:700;
+--weights-900:900;
+
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img{
+    max-width:100%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:var(--Pale-blue);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+.container{
+    overflow: hidden;
+    background-color: whitesmoke;
+    width: 450px;
+    border-radius: 15px;
+}
+
+.text-content{
+    padding:7%;
+    text-align: center;
+}
+
+.title{
+    font-weight:var(--weights-900);
+    margin-bottom: 14px;
+}
+
+.subtitle{
+    font-weight:var(--weights-500);
+    line-height: 1.6;
+    font-size: 1.8rem;
+    color:gray;
+    margin-bottom: 10px;
+}
+.price-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--Very-pale-blue);
+    padding:17px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.price-box a{
+    color: var(--Bright-blue);
+    font-weight: var(--weoghts-700);
+}
+.left-box{
+    display:flex;
+    align-items: center;
+    text-align: left;
+}
+.left-box div{
+    margin-left: 12px;
+
+}
+.left-box div h2{
+    font-size: 1.6rem;
+    font-weight: var(--weight-700);
+    margin-bottom: 5px;
+}
+.left-box div p{
+    color:grey;
+
+}
+.button{
+    display: flex;
+    flex-direction: column;
+}
+.button button{
+    margin-bottom: 8px;
+    background-color: var(--Bright-blue);
+    color: whitesmoke;
+    padding: 12px;
+    border-radius: 10px;
+    border:none;
+    font-weight: var(--weoghts-700);
+}
+.button a {
+    color: gray;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:375px) {
+    body{
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-family);
+    }
+    img{
+        max-width: 100%;
+    }
+    
+}
